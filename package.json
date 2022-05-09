@@ -1,0 +1,25 @@
+{
+  "name": "exam-portal",
+  "version": "1.0.0",
+  "description": "exam portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "Yomi & Kemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oke-yomi/exam-portal-backend/issues"
+  },
+  "homepage": "https://github.com/oke-yomi/exam-portal-backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.16"
+  }
+}
